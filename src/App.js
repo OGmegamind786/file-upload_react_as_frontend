@@ -27,7 +27,7 @@ class App extends Component {
     const form = new FormData();
     form.append('pic' , e.target.files[0]);
 
-    await axios.post('http://localhost:3012/upload' ,form)
+    await axios.post('http://localhost:3012/api/upload' ,form)
     alert('file uploaded');
     window.location.reload(false);
   }
