@@ -9,7 +9,7 @@ class File extends Component {
     }
 
     componentDidMount = async() =>{
-        const res = await axios.get('http://localhost:3012/allfiles');
+        const res = await axios.get('http://localhost:3012/api/allfiles');
         const newFiles = res.data;
         console.log(typeof(newFiles));
         console.log(newFiles);
